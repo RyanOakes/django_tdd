@@ -21,4 +21,4 @@ class NewVisiterTest(unittest.TestCase):
         # TODO: Ability to add to-do item
 
 if __name__ == '__main__':
-    unittest.main(warnings='ignore')
+    unittest.main()
