@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 echo "Success"
-                cat /etc/lsb-release
+                sh 'cat /etc/lsb-release'
             }
         }
         stage('Test') {
