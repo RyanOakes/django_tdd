@@ -21,6 +21,7 @@ pipeline {
             steps {
                 echo 'Testing...'
                 echo "Goodbye"
+                checkout scm
             }
         }
     }
