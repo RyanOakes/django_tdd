@@ -4,7 +4,7 @@ pipeline {
 
     agent {
         docker {
-            image 'node'
+            image 'ubuntu'
             args '-u root'
         }
     }
@@ -14,6 +14,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 echo "Success"
+                cat /etc/lsb-release
             }
         }
         stage('Test') {
